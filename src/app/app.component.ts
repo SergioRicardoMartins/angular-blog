@@ -8,9 +8,10 @@ import { HomeComponent } from "./pages/home/home.component";
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet, SmallCardComponent, MenuBarComponent, BigCardComponent, MenuTitleComponent, HomeComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css' 
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'angular-blog';
